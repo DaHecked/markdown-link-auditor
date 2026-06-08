@@ -4,6 +4,17 @@ Scan Markdown documentation for broken local links and missing heading anchors.
 
 `markdown-link-auditor` is a small CLI for OSS maintainers who want confidence that README and docs links still work before cutting a release.
 
+## Why people should use it
+
+Use `markdown-link-auditor` when your README or docs contain lots of local links and you want to catch broken files or stale heading anchors before users find them.
+
+It is especially useful for:
+
+- Checking docs before releases
+- Keeping README links working after file renames
+- Catching broken `#heading` anchors in CI
+- Auditing docs without pulling in a heavy dependency stack
+
 ## Features
 
 - Extract Markdown inline links while ignoring fenced code blocks and inline code
